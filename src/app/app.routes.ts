@@ -16,7 +16,7 @@ export const routes: Routes = [
   {
     path: "nosotros",
     component: Nosotros,
-    canActivate: [canactivateguardGuard]
+    
   },
   {
     path: "galeria",
@@ -25,7 +25,8 @@ export const routes: Routes = [
   },
   {
     path: "usuarios",
-    component: Usuarios
+    component: Usuarios,
+    canActivate: [canactivateguardGuard]
   },
   {
     path: "login",
@@ -34,7 +35,7 @@ export const routes: Routes = [
   {
     path: "staff",
     component: Personal,
-    canActivate: [canactivateguardGuard]
+    
   },
   {
     path: "",
